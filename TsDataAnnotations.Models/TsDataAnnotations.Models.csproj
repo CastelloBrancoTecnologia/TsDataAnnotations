@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TsModelGeneratorLib\TsModelGeneratorLib.csproj" />       
+	</ItemGroup>
+	
+	<Target Name="GenerateTypescriptModels" AfterTargets="AfterBuild">
+		<Exec ConsoleToMsBuild="true" Command="$(SolutionDir)TsModelGenerator\bin\Debug\net8.0\TsModelGenerator.exe  $(TargetPath) $(SolutionDir)TsDataAnnotations.client\src\models "   />			
+	</Target>	
+</Project>
+
+
+
+
+
+
+
+
+
+
+

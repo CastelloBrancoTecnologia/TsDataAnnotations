@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TsModelGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\\\cesar\\Documents\\GitHub\\Angular\\TsDataAnnotations\\TsDataAnnotations.Models\\bin\\Debug\\net8.0\\TsDataAnnotations.Models.dll C:\\Users\\cesar\\Documents\\GitHub\\Angular\\TsDataAnnotations.client\\src\\models "
+    }
+  }
+}
