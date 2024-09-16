@@ -1,6 +1,4 @@
-Here is a README based on the provided information:
-
----
+# TsDataAnnotations - DataAnnotations and validators for Angular, generated from c# model classes
 
 # TypeScript Model Generator
 
