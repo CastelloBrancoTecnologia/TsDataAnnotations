@@ -1,5 +1,7 @@
 # TsDataAnnotations - DataAnnotations and validators for Angular, generated from c# model classes
 
+Compatible with CommunityToolkit.MVVM 
+
 # TypeScript Model Generator
 
 This project provides a **TypeScript Model Generator** tool that automatically generates TypeScript class models equivalent to C# classes decorated with specific attributes. It is designed to integrate seamlessly with .NET projects, executing after the Visual Studio build process.
