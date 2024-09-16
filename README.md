@@ -10,25 +10,10 @@ This project provides a **TypeScript Model Generator** tool that automatically g
 
 1. **`GenerateTypeScriptAttribute`**
    - Applied to a C# class to mark it for TypeScript model generation.
-   
-   ```csharp
-   [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
-   public class GenerateTypeScriptAttribute : Attribute
-   {
-       public GenerateTypeScriptAttribute() { }
-   }
-   ```
 
 2. **`TypeScriptIgnoreAttribute`**
    - Applied to a class or property to exclude it from the generated TypeScript model.
    
-   ```csharp
-   [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property, Inherited = false, AllowMultiple = false)]
-   public class TypeScriptIgnoreAttribute : Attribute
-   {
-       public TypeScriptIgnoreAttribute() { }
-   }
-   ```
 
 ## Usage in .NET Project
 
