@@ -42,12 +42,13 @@ This command does the following:
 
 ## Angular Integration
 
-The generated TypeScript models can be used in an Angular project, with validation provided by decorators. For example:
+The generated TypeScript models from c# models can be used in an Angular project, with validation provided by decorators. For example:
 
 ```typescript
-import "reflect-metadata";
+import { Required, Email } from "../Validators/validators"
+import { BaseViewModel } from  "../Validators/validators"
 
-export class MyModel {
+export class MyModel extends BaseViewModel {
     @Required("This field is required")
     public myProperty: string;
 
