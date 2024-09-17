@@ -4,7 +4,7 @@
 2) use all good things of **CommunityToolkit.MVVM**, include source generators 
 3) Call TypeScript Model Generator from visual studio project automaticaly after suscessfull build
 4) Typescript classes equivalent of your datamodels are atomaticaly generated inside Angular frontend project
-5) Use the save validators and datamodels inside typescript. Also serialize it to pass to jsonwebservices and c# equivalent classes are desserialized inside backend
+5) Use the same validators and datamodels of c# inside typescript. Also serialize it from typescript to pass to json webservices and to c# - equivalent c# classes are desserialized inside backend
 
    Enjoy ! 
 
