@@ -1,6 +1,12 @@
 # TsDataAnnotations - DataAnnotations and validators for Angular, generated from c# model classes
 
-Compatible with CommunityToolkit.MVVM 
+1) Separate yours models in an separate C# class library project. Use it on server side or on desktops apps projects
+2) use all good things of **CommunityToolkit.MVVM**, include sorce generators 
+3) Call TypeScript Model Generator from visual studio project automaticaly after suscessfull build
+4) Typescript classes equivalent of your datamodels are atomaticaly generated inside Angular frontend project
+5) Use the save validators and datamodels inside typescript. Also serialize it to pass to jsonwebservices and c# equivalent classes are desserialized inside backend
+
+   Enjoy ! 
 
 # TypeScript Model Generator
 
@@ -60,7 +66,7 @@ The project includes a set of decorators to apply validation rules to the genera
 - **`Guid`**: Validates if a string follows a GUID format.
 - **`MaxLength`**: Limits the length of a string.
 - 
-- validators in SYstem.Componentmodel.DataAnnotations 
+- validators in System.ComponentModel.DataAnnotations 
 
 For the complete list of validators and their usage, refer to the included TypeScript file.
 
