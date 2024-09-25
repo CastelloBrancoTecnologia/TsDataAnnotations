@@ -44,16 +44,34 @@ This command does the following:
 
 The generated TypeScript models from c# models can be used in an Angular project, with validation provided by decorators. For example:
 
+```c#
+using System.ComponentModel.DataAnnotations;
+using CommunityToolkit.MVVM.DataAnnotations;
+
+class MyModel : BaseViewModel
+{
+    [ObjectProperty]
+    [Required("This field is required")]
+    private string myProperty = "";
+
+    [ObjectProperty]
+    [Email("Invalid email format")]
+    private string email = "";
+}
+```
+
+Generated class from ModelGenerator after sucefull buil of c#
+
 ```typescript
 import { Required, Email } from "../Validators/validators"
 import { BaseViewModel } from  "../Validators/validators"
 
 export class MyModel extends BaseViewModel {
     @Required("This field is required")
-    public myProperty: string;
+    public myProperty: string = "";
 
     @Email("Invalid email format")
-    public email: string;
+    public email: string = "";
 }
 ```
 
@@ -74,7 +92,7 @@ For the complete list of validators and their usage, refer to the included TypeS
 ### Example Usage
 
 ```typescript
-export class UserModel {
+export class UserModel extends BaseViewModel {
     @Required("Username is required")
     public username: string;
 
