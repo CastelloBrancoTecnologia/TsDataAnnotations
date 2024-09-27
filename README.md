@@ -1,6 +1,8 @@
 # TsDataAnnotations 
 
-# System.ComponentModel.DataAnnotations - C# attributes and validators for Typescript, generated from c# model classes
+# System.ComponentModel.DataAnnotations 
+
+# C# attributes and validators for Typescript, generated from c# model classes
 
 1) Separate yours models in an separate C# class library project. Use it on server side or on desktops apps projects
 2) use all good things of **CommunityToolkit.MVVM**, include source generators 
